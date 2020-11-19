@@ -6,6 +6,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/fe380437b5.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <title>JS practice</title>
 </head>
@@ -21,6 +22,8 @@
     <p class="text-length"></p>
     <p class="str"></p>
   </div>
+
+  <!--  Radio Button -->
   <div class="grid">
     <h1>Radio Button</h1>
     <h2>Поставьте флажок на фрукт , чтобы узнать его полезные свойства</h2>
@@ -45,9 +48,96 @@
       <h3 class="fruitTitle"></h3>
       <p class="fruitInfo"></p>
     </div>
+  </div>
+
+  <!--  Modal -->
+  <div class="grid">
+      <h1>Modal</h1>
+      <h3>Нажми на кнопку чтобы открыть модальное окно</h3>
+      <button class="modal__btn">
+        Click me
+      </button>
+  </div>
+  <div id="modal" class="modal">
+    <div class="modal__body">
+      <div class="modal__content">
+        <span href="" class="modal__close"><i class="fas fa-times"></i></span>
+        <div class="modal__title">Модальное окно</div>
+        <div class="modal__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda cupiditate ducimus eaque enim itaque officiis quaerat vero. Alias beatae culpa cumque dicta dolore, earum facilis fugiat mollitia necessitatibus nostrum odio praesentium quaerat qui quia quibusdam quis quos ratione recusandae sunt totam ut veniam vitae? Delectus dicta eligendi illum laudantium minus nobis non totam voluptatum. At blanditiis commodi debitis deserunt doloribus laudantium magnam minus, nam nihil nobis perferendis provident sed sint soluta voluptate! A alias aliquid aperiam at eos est ex harum impedit, laborum minus modi nam numquam perspiciatis quia quis recusandae saepe, sed sit soluta tenetur ullam voluptate voluptatem? Accusantium aut dicta doloribus repudiandae, unde ut vitae? Architecto atque distinctio eligendi ex fugiat inventore molestias neque, officia provident quia quisquam sapiente sit temporibus tenetur totam unde, voluptatibus. Accusantium, animi deleniti dolorem doloremque est expedita fugiat iure labore libero magni mollitia nihil officia officiis porro quam quasi quos reiciendis similique ut, vitae. Aliquam commodi dolorem inventore, odio optio quisquam sequi! A aperiam deserunt inventore iusto molestiae officiis qui voluptates. Atque expedita nihil sapiente. Alias asperiores at autem beatae nemo nesciunt quasi, voluptatibus! Atque beatae, dolorum ducimus eaque id impedit ipsam, iste nesciunt non, perspiciatis quas qui sequi temporibus totam ut?
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--  ToDoList -->
+
+  <div class="grid">
+      <div class="todo_list">
+        <h1>ToDoList</h1>
+        <form class="new_todo">
+          <input type="text" class="todo_list__field">
+          <button class="todo_list__btn">Добавить</button>
+        </form>
+          <ul class="todo">
+          </ul>
+      </div>
+  </div>
+
+<!--  Guess The Number -->
+
+  <div class="grid">
+      <h1>Guess The Number</h1>
+      <div class="guessNumber">
+        <h4>Я загадал число от 1 до 100, попробоуй отгдать что за число</h4>
+        <form data-guessNumber-form class="guessNumber_form">
+          <label for="number">Введите число</label>
+          <input data-guessNumber-field id="number" type="text" class="field">
+          <button data-guessNumber-btn class="numberBtn">Проверить</button>
+          <p data-guessNumber-text class="numberText"></p>
+        </form>
+      </div>
+  </div>
+
+<!--  Calculator  -->
+
+  <div class="grid">
+    <div class="calculator-grid">
+        <h1>Calculator</h1>
+      <div class="output">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+      </div>
+      <button data-clear class="span-two">AC</button>
+      <button data-delete>DEL</button>
+      <button data-operation>÷</button>
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operation>*</button>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operation>+</button>
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-operation>-</button>
+      <button data-number>.</button>
+      <button data-number>0</button>
+      <button data-equals class="span-two">=</button>
+
+    </div>
 
   </div>
-</main>
-<script src="js/core.js"></script>
+
+
+  </main>
+<script src="js/textValid.js"></script>
+<script src="js/radioBtn.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/todo.js"></script>
+<script src="js/guessNumber.js"></script>
+<script src="js/calculator.js"></script>
 </body>
 </html>
