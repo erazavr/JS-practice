@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    user-select: none;
 }
 .container {
     max-width: 800px;
@@ -71,3 +72,182 @@ img {
 .fruitInfo {
     padding: 0 20px;
 }
+
+/* MODAL */
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+.modal__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+
+}
+.modal__content {
+    background-color: #fff;
+    color: #000000;
+    border-radius: 10px;
+    max-width: 800px;
+    padding: 30px;
+    position: relative;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+.modal__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.modal__title {
+    font-size: 40px;
+    margin: 0 0 1em 0;
+}
+.modal__btn {
+    margin: 2em 0;
+    padding: 1em 2em;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.modal__btn:hover {
+    background-color: #e3ff59;
+}
+
+/*ToDoList*/
+
+.todo_list {
+    max-width: 400px;
+    display: block;
+    margin: 0 auto 40px;
+    padding: 30px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+.new_todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.todo_list__field {
+    width: 376px;
+    padding: 10px;
+}
+.todo_list__btn {
+    margin-top: 10px;
+    width: 376px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.todo {
+    list-style: none;
+}
+.todo_item {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 1rem 0;
+    transition: all .4s ease 0s;
+}
+.todo_item:hover {
+    background: #979797;
+}
+.todo_item-title {
+    padding: .5rem 1rem;
+}
+.todo_item-btn {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 1rem;
+}
+.todo_item-btn:hover {
+    background-color: red;
+    color: #ffffff;
+}
+.checked {
+    text-decoration: line-through;
+}
+
+/* Guess The Number */
+
+.guessNumber h4 {
+    font-family: 'Roboto', sans-serif;
+    margin: 1.5rem 0;
+}
+.numberText {
+    margin: 1.5rem 0;
+}
+
+/* Calculator */
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+.calculator-grid h1 {
+    grid-column: 1 / 5;
+}
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #ffffff;
+    outline: none;
+    min-height: 100px;
+}
+.calculator-grid > button:hover {
+    background-color: #6b7072;
+}
+.span-two {
+    grid-column: span 2;
+}
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.previous-operand {
+    color: rgba(225, 255, 255, .75);
+    font-size: 1.5rem;
+}
+.current-operand {
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+
