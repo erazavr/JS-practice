@@ -1,8 +1,8 @@
 const message = document.querySelector('.todo_list__field');
-const form = document.querySelector('.new_todo');
+const formTodo = document.querySelector('.new_todo');
 const list = document.querySelector('.todo');
 
-form.addEventListener('submit', function (e) {
+formTodo.addEventListener('submit', function (e) {
   e.preventDefault();
   if (message.value === '') {
    message.placeholder = 'Вы ничего не ввели'
