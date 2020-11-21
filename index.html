@@ -126,6 +126,33 @@
       <button data-number>.</button>
       <button data-number>0</button>
       <button data-equals class="span-two">=</button>
+    </div>
+  </div>
+
+  <div class="grid">
+    <h1>RGBA</h1>
+    <div class="rgba-block">
+      <div class="rgba-range">
+        <label for="red">Red (<span id="red-val">0</span>)</label>
+        <input id="red" class="slider" type="range" min="0" max="255" value="0">
+
+        <label for="green">Green (<span id="green-val">0</span>)</label>
+        <input id="green" class="slider" type="range" min="0" max="255" value="0">
+
+        <label for="blue">Blue (<span id="blue-val">0</span>)</label>
+        <input id="blue" class="slider" type="range" min="0" max="255" value="0">
+
+        <label for="opacity">Opacity (<span id="opacity-val">10</span>)</label>
+        <input id="opacity" class="slider" type="range" min="0" max="10" value="10">
+        <div class="rgb-display">
+          <div>RGB(<span id="rgb">0,0,0</span>)</div>
+          <div>RGBA(<span id="rgba">0,0,0,0</span>)</div>
+        </div>
+      </div>
+
+      <div id="bg" class="bg">
+      </div>
+
 
     </div>
 
@@ -139,5 +166,6 @@
 <script src="js/todo.js"></script>
 <script src="js/guessNumber.js"></script>
 <script src="js/calculator.js"></script>
+<script src="js/rgba.js"></script>
 </body>
 </html>
