@@ -21,7 +21,7 @@ formTodo.addEventListener('submit', function (e) {
     li.appendChild(span);
     li.appendChild(newBtn);
     list.appendChild(li);
-
+    message.value = '';
     li.addEventListener('click', function () {
       if (this.classList.contains('checked')) {
         this.classList.remove('checked')
