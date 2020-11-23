@@ -26,9 +26,7 @@ form {
 * {
     box-sizing: border-box;
 }
-img {
-    width: 100px;
-}
+
 .main-title {
     text-align: center;
     margin: 0 0 50px 0;
@@ -305,5 +303,57 @@ img {
     margin-top: 20px;
 }
 
+/* Carousel */
+
+.carousel-container {
+    width: 75%;
+    margin: auto;
+    position: relative;
+
+    overflow: hidden;
+}
+.carousel-slide {
+    display: flex;
+    position: relative;
+
+}
+.carousel-slide img {
+    width: 600px;
+    height: 400px
+}
+#prevBtn, #nextBtn {
+    position: absolute;
+    z-index: 10;
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+}
+#prevBtn {
+    top: 60%;
+    left: 5%;
+}
+#nextBtn {
+    top: 60%;
+    right: 5%;
+}
+
+.bubbles {
+    position: absolute;
+    left: 45%;
+    bottom: 10px;
+    display: flex;
+}
+
+.bubble {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    margin-right: 3px;
+    border: 1px solid red;
+}
+
+.bubble-active {
+    background: red;
+}
 
 
