@@ -31,17 +31,17 @@
       <div class="block-item">
         <label for="bananaRadio">Банан</label>
         <input type="radio" name="prim" id="bananaRadio" value="banana">
-        <label for="bananaRadio"><img src="img/banana.png" alt=""></label>
+        <label for="bananaRadio"><img src="img/radioBtnImgs/banana.png" alt=""></label>
       </div>
       <div class="block-item">
         <label for="appleRadio">Яблоко</label>
         <input type="radio" name="prim" id="appleRadio" value="apple">
-        <label for="appleRadio"><img src="img/apple.png" alt=""></label>
+        <label for="appleRadio"><img src="img/radioBtnImgs/apple.png" alt=""></label>
       </div>
       <div class="block-item">
         <label for="pineappleRadio">Ананас</label>
         <input type="radio" name="prim" id="pineappleRadio" value="pineapple">
-        <label for="pineappleRadio"><img src="img/pineapple.png" alt=""></label>
+        <label for="pineappleRadio"><img src="img/radioBtnImgs/pineapple.png" alt=""></label>
       </div>
     </div>
     <div>
@@ -129,6 +129,8 @@
     </div>
   </div>
 
+
+  <!-- RGBA -->
   <div class="grid">
     <h1>RGBA</h1>
     <div class="rgba-block">
@@ -152,12 +154,30 @@
 
       <div id="bg" class="bg">
       </div>
-
-
     </div>
-
   </div>
 
+<!-- Carousel -->
+
+  <div class="grid">
+  <div class="carousel-container">
+    <h1 style="text-align: center; margin: 0 0 50px 0">Carousel</h1>
+    <i id="prevBtn" class="fas fa-arrow-left"></i>
+    <i id="nextBtn" class="fas fa-arrow-right"></i>
+    <div class="carousel-slide">
+      <img src="img/carouselImgs/slider5.jpg" id="lastClone" alt="">
+      <img src="img/carouselImgs/slider1.jpg" alt="">
+      <img src="img/carouselImgs/slider2.jpg" alt="">
+      <img src="img/carouselImgs/slider3.jpg" alt="">
+      <img src="img/carouselImgs/slider4.jpg" alt="">
+      <img src="img/carouselImgs/slider5.jpg" alt="">
+      <img src="img/carouselImgs/slider1.jpg" id="firstClone" alt="">
+    </div>
+    <div class="bubbles">
+    </div>
+  </div>
+
+  </div>
 
   </main>
 <script src="js/textValid.js"></script>
@@ -167,5 +187,6 @@
 <script src="js/guessNumber.js"></script>
 <script src="js/calculator.js"></script>
 <script src="js/rgba.js"></script>
+<script src="js/carousel.js"></script>
 </body>
 </html>
