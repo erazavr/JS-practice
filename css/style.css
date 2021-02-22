@@ -1,386 +1,451 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    user-select: none;
+  font-family: "Roboto", sans-serif;
+  user-select: none;
 }
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    font-family: 'Goldman', cursive;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Goldman", cursive;
 }
 p {
-    margin: 0;
+  margin: 0;
 }
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 form {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .main-title {
-    text-align: center;
-    margin: 0 0 50px 0;
-
+  text-align: center;
+  margin: 0 0 50px 0;
 }
 /*TEXT Block*/
 .grid {
-    padding: 20px 0;
-    margin: 0 0 50px 0;
-    text-align: center;
-    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.75);
-    border-radius: 5px;
+  padding: 20px 0;
+  margin: 0 0 50px 0;
+  text-align: center;
+  box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
 }
 .grid h1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .field {
-    padding: 3px 5px;
-    width: 200px;
+  padding: 3px 5px;
+  width: 200px;
 }
 
 /*RADIO BUTTON Block*/
 
 .block {
-    margin: 40px 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin: 40px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .block-item {
-    margin: 0 30px;
+  margin: 0 30px;
 }
 .block-item img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 .fruitTitle {
-    margin: 20px 0 20px;
+  margin: 20px 0 20px;
 }
 .fruitInfo {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 /* MODAL */
 
 .modal {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 
-    top: 0;
-    left: 0;
-    opacity: 0;
-    visibility: hidden;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transition: all 0.8s ease 0s;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
 }
 .modal__body {
-    min-height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 10px;
-
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
 }
 .modal__content {
-    background-color: #fff;
-    color: #000000;
-    border-radius: 10px;
-    max-width: 800px;
-    padding: 30px;
-    position: relative;
-    transition: all 0.8s ease 0s;
-    opacity: 0;
-    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+  background-color: #fff;
+  color: #000000;
+  border-radius: 10px;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
 .modal__close {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: 20px;
-    cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
 }
 .modal__title {
-    font-size: 40px;
-    margin: 0 0 1em 0;
+  font-size: 40px;
+  margin: 0 0 1em 0;
 }
 .modal__btn {
-    margin: 2em 0;
-    padding: 1em 2em;
-    font-size: 15px;
-    background-color: transparent;
-    border: 1px solid;
-    border-radius: 3px;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+  margin: 2em 0;
+  padding: 1em 2em;
+  font-size: 15px;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 .modal__btn:hover {
-    background-color: #e3ff59;
+  background-color: #e3ff59;
 }
 
 /*ToDoList*/
 
 .todo_list {
-    max-width: 400px;
-    display: block;
-    margin: 0 auto 40px;
-    padding: 30px;
-    border: 2px solid;
-    border-radius: 10px;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto 40px;
+  padding: 30px;
+  border: 2px solid;
+  border-radius: 10px;
 }
 .new_todo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .todo_list__field {
-    width: 376px;
-    padding: 10px;
+  width: 376px;
+  padding: 10px;
 }
 .todo_list__btn {
-    margin-top: 10px;
-    width: 376px;
-    padding: 10px;
-    cursor: pointer;
+  margin-top: 10px;
+  width: 376px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .todo {
-    list-style: none;
+  list-style: none;
 }
 .todo_item {
-    cursor: pointer;
-    border: 1px solid #ccc;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 5px;
-    margin: 1rem 0;
-    transition: all .4s ease 0s;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin: 1rem 0;
+  transition: all 0.4s ease 0s;
 }
 .todo_item:hover {
-    background: #979797;
+  background: #979797;
 }
 .todo_item-title {
-    padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 .todo_item-btn {
-    background: transparent;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    padding: 0 1rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 1rem;
 }
 .todo_item-btn:hover {
-    background-color: red;
-    color: #ffffff;
+  background-color: red;
+  color: #ffffff;
 }
 .checked {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 /* Guess The Number */
 
 .guessNumber h4 {
-    font-family: 'Roboto', sans-serif;
-    margin: 1.5rem 0;
+  font-family: "Roboto", sans-serif;
+  margin: 1.5rem 0;
 }
 .numberText {
-    margin: 1.5rem 0;
+  margin: 1.5rem 0;
 }
 
 /* Calculator */
 
 .calculator-grid {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    min-height: 100vh;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 .calculator-grid h1 {
-    grid-column: 1 / 5;
+  grid-column: 1 / 5;
 }
 .calculator-grid > button {
-    cursor: pointer;
-    font-size: 2rem;
-    border: 1px solid #ffffff;
-    outline: none;
-    /*Добавил min-height чтобы кнопки не теряли высоту когда добавляется загаловок h1*/
-    min-height: 100px;
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid #ffffff;
+  outline: none;
+  /*Добавил min-height чтобы кнопки не теряли высоту когда добавляется загаловок h1*/
+  min-height: 100px;
 }
 .calculator-grid > button:hover {
-    background-color: #6b7072;
+  background-color: #6b7072;
 }
 .span-two {
-    grid-column: span 2;
+  grid-column: span 2;
 }
 .output {
-    grid-column: 1 / -1;
-    background-color: rgba(0,0,0,0.5);
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    flex-direction: column;
-    padding: 10px;
-    word-wrap: break-word;
-    word-break: break-all;
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .previous-operand {
-    color: rgba(225, 255, 255, .75);
-    font-size: 1.5rem;
+  color: rgba(225, 255, 255, 0.75);
+  font-size: 1.5rem;
 }
 .current-operand {
-    color: #ffffff;
-    font-size: 2.5rem;
+  color: #ffffff;
+  font-size: 2.5rem;
 }
 
 /* RGBA */
 
 .rgba-block {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 .rgba-range {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .rgba-range input {
-    width: 300px;
-    margin: 20px 0;
+  width: 300px;
+  margin: 20px 0;
 }
 .rgba-range input:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 .slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 15px;
-    background-color: rgba(0,0,0,1);
-    outline: none;
-    opacity: .7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-    border-radius: 12px;
-    box-shadow: 0px 1px 10px 1px #000000;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 1);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 12px;
+  box-shadow: 0px 1px 10px 1px #000000;
 }
 .slider:hover {
-    opacity: 1;
+  opacity: 1;
 }
 .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    background: #ffffff;
-    border-radius: 50%;
-    cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
 }
 .bg {
-    width: 300px;
-    height: 300px;
-    background-color: rgba(0,0,0,1);
-    border-radius: 5px;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 5px;
 }
 .rgb-display {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
 }
 
 /* Carousel */
 
 .carousel-container {
-    width: 75%;
-    margin: auto;
-    position: relative;
+  width: 75%;
+  margin: auto;
+  position: relative;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 .carousel-slide {
-    display: flex;
-    position: relative;
-
+  display: flex;
+  position: relative;
 }
 .carousel-slide img {
-    width: 600px;
-    height: 400px
+  width: 600px;
+  height: 400px;
 }
-#prevBtn, #nextBtn {
-    position: absolute;
-    z-index: 10;
-    font-size: 30px;
-    color: #ffffff;
-    cursor: pointer;
+#prevBtn,
+#nextBtn {
+  position: absolute;
+  z-index: 10;
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
 }
 #prevBtn {
-    top: 60%;
-    left: 5%;
+  top: 60%;
+  left: 5%;
 }
 #nextBtn {
-    top: 60%;
-    right: 5%;
+  top: 60%;
+  right: 5%;
 }
 
 .bubbles {
-    position: absolute;
-    left: 45%;
-    bottom: 10px;
-    display: flex;
+  position: absolute;
+  left: 45%;
+  bottom: 10px;
+  display: flex;
 }
 
 .bubble {
-    width: 5px;
-    height: 5px;
-    border-radius: 100%;
-    margin-right: 3px;
-    border: 1px solid red;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  margin-right: 3px;
+  border: 1px solid red;
 }
 
 .bubble-active {
-    background: red;
+  background: red;
 }
-
 
 /* Test */
 
 .test-form {
-    padding: 0 20px;
-    text-align: initial;
+  padding: 0 20px;
+  text-align: initial;
 }
-.test-form h2, h3 {
-    font-family: 'Roboto', sans-serif;
-    margin: 1em 0;
+.test-form h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  margin: 1em 0;
 }
 .test-form__questions {
-    margin: 0 0 2em;
+  margin: 0 0 2em;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .answers-info {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
 }
-/*.points {*/
-/*    text-align: right;*/
-/*    padding-right: 70px;*/
-/*}*/
+
+/* ========= */
+.task-container,
+.result {
+  background-color: #333333;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+}
+.time {
+  background-color: #3ab54d;
+  margin: 10px auto;
+  width: 100px;
+  border: 2px solid #546d8b;
+  border-radius: 3px;
+  color: #333333;
+}
+.time--red {
+  color: red;
+}
+.curr-word {
+  color: #9ec349;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+.options {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.options-el {
+  width: 32.3333%;
+  text-transform: uppercase;
+  color: #9ec349;
+  background-color: #191919;
+  padding: 5px 5px;
+  margin: 5px auto;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#start-task,
+#pause-task {
+  padding: 5px 20px;
+  background-color: #333333;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  color: #9ec349;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 0 10px;
+}
+.result {
+  color: #9ec349;
+  text-transform: uppercase;
+}
+.correct {
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  border-bottom: 2px solid;
+}

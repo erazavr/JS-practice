@@ -209,6 +209,26 @@
     </div>
   </div>
 
+  <div class="grid task">
+    <h1>Find words in 20 seconds</h1>
+    <p>(Keep in mind that if the word is incorrect, add 1 second!)</p>
+    <button id="start-task">Start</button>
+    <button id="pause-task" class="hide">Pause</button>
+    <div class="task-container hide">
+      <div class="time">
+        <span id="minutes">00</span> :
+        <span id="seconds">00</span>
+      </div>
+      <div class="curr-word">>Word(1/8)</div>
+      <div class="options">
+      </div>
+    </div>
+    <div class="result">
+      <div class="correct">Correct words: <span id="correctCount">0</span></div>
+      <div class="wrong">Wrong words: <span id="wrongCount">0</span></div>
+    </div>
+  </div>
+
   </main>
 <script src="js/textValid.js"></script>
 <script src="js/radioBtn.js"></script>
@@ -220,5 +240,6 @@
 <script src="js/carousel.js"></script>
 <script src="js/questions.js"></script>
 <script src="js/test.js"></script>
+<script src="js/task.js"></script>
 </body>
 </html>
